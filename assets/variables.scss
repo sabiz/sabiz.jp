@@ -1,0 +1,18 @@
+$background: #F0F0F2;
+$color: #3A3B40;
+$primary: #C1C9D9;
+$secondary: #5A6073;
+$tertiary: #A3A4BF;
+
+$material-light : (
+  background : $background
+);
+
+
+:export {
+  background: $background;
+  color: $color;
+  primary: $primary;
+  secondary: $secondary;
+  tertiary: $tertiary;
+}
