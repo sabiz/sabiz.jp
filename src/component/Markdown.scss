@@ -1,0 +1,71 @@
+
+.mkd {
+  margin: 0 auto;
+
+  h2 {
+    &::before {
+      content: '\00A0';
+      margin-right: 0.4rem;
+      background: var(--primary-color);
+    }
+  }
+
+  h3 {
+    &::before {
+      content: '\00A0';
+      margin-left: 1rem;
+      margin-right: 0.4rem;
+      background: var(--secondary-color);
+    }
+  }
+
+  img[alt="icon"] {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+  }
+
+  strong, em {
+    display: block;
+    text-align: center;
+  }
+
+  .contacts {
+    text-align:center;
+  }
+
+  .icon-contact {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: var(--fg-color);
+
+    .fa-twitter {
+      color: #1da1f2;
+    }
+  }
+
+  .words {
+    font-family: var(--emoji-fonts);
+    margin: 0 10vh;
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      text-align: center;
+      margin: 0.5rem 1px;
+      padding: 5px 1rem;
+      border-radius: 2em;
+
+      @for $i from 1 through 100 {
+        &:nth-child(#{$i}) {
+          background-color: hsl(random(360), 100, 90);
+          @if $i % 7 == 0 {
+              break-after: always;
+          }
+        }
+      }
+    }
+  }
+}
+

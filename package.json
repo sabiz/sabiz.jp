@@ -1,45 +1,41 @@
 {
   "name": "sabiz.jp",
   "version": "1.0.0",
-  "description": "sabiz.jp",
-  "author": "sAbIz",
-  "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
-  },
-  "lint-staged": {
-    "*.{js,vue}": "eslint"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "dependencies": {
-    "@nuxtjs/dotenv": "^1.4.0",
-    "highlightjs": "^9.16.2",
-    "marked": "^0.7.0",
-    "nuxt": "^2.0.0",
-    "three": "^0.112.1"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "start": "sirv dist"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "^1.0.1",
-    "@nuxtjs/eslint-module": "^1.0.0",
-    "@nuxtjs/stylelint-module": "^3.1.0",
-    "@nuxtjs/vuetify": "^1.0.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^6.1.0",
-    "eslint-config-prettier": "^4.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "husky": "^2.6.0",
-    "lint-staged": "^8.2.1",
-    "prettier": "^1.16.4",
-    "raw-loader": "^4.0.0",
-    "stylelint": "^10.1.0"
+    "@rollup/plugin-commonjs": "^11.0.0",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "install": "^0.13.0",
+    "marked": "^0.8.2",
+    "rollup": "^1.20.0",
+    "rollup-plugin-command": "^1.1.2",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-livereload": "^1.0.0",
+    "rollup-plugin-scss": "^2.1.0",
+    "rollup-plugin-shader": "0.0.3",
+    "rollup-plugin-sizes": "^1.0.2",
+    "rollup-plugin-svelte": "^5.0.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "stylelint": "^13.3.0",
+    "svelte": "^3.0.0",
+    "svelte-preprocess": "^3.7.1",
+    "three": "^0.115.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.28",
+    "@fortawesome/free-brands-svg-icons": "^5.13.0",
+    "@fortawesome/free-solid-svg-icons": "^5.13.0",
+    "sirv-cli": "^0.4.4"
   }
 }
