@@ -16,7 +16,7 @@ export const createEnvironment = (canvas) => {
   renderer.setPixelRatio(window.devicePixelRatio)
   renderer.setSize(width, height)
 
-  // Base Scene ---------------------------------------------------------------
+  // Scene ---------------------------------------------------------------
   const scene = new THREE.Scene()
   const camera = new THREE.PerspectiveCamera(45, aspect, 1, 10000)
   camera.position.set(0, 0, +1000)
@@ -24,27 +24,16 @@ export const createEnvironment = (canvas) => {
   scene.add(light)
   const renderTarget = new THREE.WebGLRenderTarget(width, height)
 
-  // Post Scene ---------------------------------------------------------------
-  const postScene = new THREE.Scene()
-  const postCamera = new THREE.PerspectiveCamera(45, aspect, 1, 10000)
-  postCamera.position.set(0, 0, +1000)
-
   return {
     renderer,
     width,
     height,
     aspect,
     clock,
-    base: {
-      scene,
-      camera,
-      light,
-      renderTarget
-    },
-    post: {
-      scene: postScene,
-      camera: postCamera
-    }
+    scene,
+    camera,
+    light,
+    renderTarget
   }
 }
 
