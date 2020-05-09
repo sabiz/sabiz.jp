@@ -1,4 +1,4 @@
-![icon](https://via.placeholder.com/150)
+![icon](/icon.png)
 
 **sAbIz**
 
