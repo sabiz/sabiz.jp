@@ -6,7 +6,7 @@ import Markdown from './Markdown.svelte'
 <main>
   <Signature />
   <div class="space"/>
-  <Markdown markdownUrl='/content.md'/>
+  <Markdown markdownUrl='./content.md'/>
   <div class="space"/>
   <span class="copyright">(c) 2013 sAbIz</span>
 </main>
