@@ -20,12 +20,12 @@ jobs:
       with:
         ref: gh-pages
         path: gh-pages
-    - name: Use Node.js ${{ node-version }}
+    - name: Use Node.js ${{ node_version }}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ node-version }}
+        node-version: ${{ node_version }}
     - name: Run script
       shell: bash
       run: master/script/deploy.sh
-        
-    
+
+
