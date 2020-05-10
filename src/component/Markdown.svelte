@@ -12,7 +12,7 @@
 
   const getContent = async () => {
     try {
-      const resp = await fetch(markdownUrl)
+      const resp = await fetch(markdownUrl, {cache: "no-store"})
       if (!resp.ok) {
         console.log(resp)
         throw new Error('Response is  not ok')
@@ -42,11 +42,9 @@
   }
 
   let content
-  setTimeout(() => {
-    getContent().then((dat) => {
-      content = replaceSkill(marked(dat))
-    })
-  }, 700)
+  getContent().then((dat) => {
+    content = replaceSkill(marked(dat))
+  })
 
 </script>
 
