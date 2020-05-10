@@ -1,0 +1,31 @@
+name: Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+
+jobs:
+  deploy_job:
+    runs-on: ubuntu-latest
+    env:
+      node_version: v12.13.x
+    steps:
+    - name: Checkout [master]
+      uses: actions/checkout@v2
+      with:
+        path: master
+    - name: Checkout [gh-pages]
+      uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+        path: gh-pages
+    - name: Use Node.js ${{ node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ node-version }}
+    - name: Run script
+      shell: bash
+      run: master/script/deploy.sh
+        
+    
