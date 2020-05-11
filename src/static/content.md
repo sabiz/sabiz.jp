@@ -17,11 +17,25 @@
 </div>
 
 ## Skill
-@START_WORDS@
-Android,iOS,Front-end,Back-end,
-C,Java,Python,Kotlin,Swift,JavaScript,CSS,HTML,C#,Bash,
-Vim❤
-@END_WORDS@
+<!-- icon sample https://simpleicons.org/ -->
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐⭐&color=3DDC84&logo=Android)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=000000&logo=iOS)
+![](https://img.shields.io/static/v1?style=flat&label=Front-End&message=⭐⭐⭐☆☆&color=4285F4&labelColor=4285F4)
+![](https://img.shields.io/static/v1?style=flat&label=Back-End&message=⭐⭐⭐☆☆&color=FCC624&labelColor=FCC624)  
+
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐⭐&color=007396&logo=Java)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐&color=FA7343&logo=Swift)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=0095D5&logo=Kotlin)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=3776AB&logo=Python)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=F7DF1E&logo=JavaScript)  
+
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=E34F26&logo=HTML5)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=1572B6&logo=CSS3)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=239120&logo=C-sharp)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=00599C&logo=C)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=4EAA25&logo=GNU-Bash)  
+
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=💗💗💗💗💗&color=4EAA25&logo=Vim)
 
 ## Career
 
