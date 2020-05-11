@@ -12,7 +12,7 @@
 
   const getContent = async () => {
     try {
-      const resp = await fetch(markdownUrl, {cache: "no-store"})
+      const resp = await fetch(markdownUrl, { cache: 'no-store' })
       if (!resp.ok) {
         console.log(resp)
         throw new Error('Response is  not ok')
