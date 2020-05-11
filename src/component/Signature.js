@@ -4,16 +4,21 @@ import { getCssVariable } from '../utils/css'
 const BACKGROUND_COLOR = getCssVariable('--bg-color')
 const RESOLUTION = 32
 
-export const createEnvironment = (canvas) => {
-  const width = canvas.width
-  const height = canvas.height
+export const createEnvironment = (canvas, requestWidth, requestHeight) => {
+  const width = requestWidth
+  const height = requestHeight
+  const pixelRatio = window.devicePixelRatio
+  const scaledWidth = width * pixelRatio
+  const scaledHeight = height * pixelRatio
   const aspect = width / height
   const clock = new THREE.Clock()
+  canvas.width = scaledWidth
+  canvas.height = scaledHeight
 
   // Renderer -----------------------------------------------------------------
   const renderer = new THREE.WebGLRenderer({ canvas })
   renderer.setClearColor(BACKGROUND_COLOR)
-  renderer.setPixelRatio(window.devicePixelRatio)
+  renderer.setPixelRatio(pixelRatio)
   renderer.setSize(width, height)
 
   // Scene ---------------------------------------------------------------
@@ -22,12 +27,12 @@ export const createEnvironment = (canvas) => {
   camera.position.set(0, 0, +1000)
   const light = new THREE.AmbientLight('#FFFFFF')
   scene.add(light)
-  const renderTarget = new THREE.WebGLRenderTarget(width, height)
+  const renderTarget = new THREE.WebGLRenderTarget(scaledWidth, scaledHeight)
 
   return {
     renderer,
-    width,
-    height,
+    width: scaledWidth,
+    height: scaledHeight,
     aspect,
     clock,
     scene,

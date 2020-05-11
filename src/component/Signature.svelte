@@ -11,9 +11,7 @@ let env
 onMount(() => {
   const elementWrapper = document.querySelector('.signature-wrapper')
   const elementCanvas = document.querySelector('.signature')
-  elementCanvas.width = elementWrapper.clientWidth
-  elementCanvas.height = elementWrapper.clientHeight
-  env = createEnvironment(elementCanvas)
+  env = createEnvironment(elementCanvas, elementWrapper.clientWidth, elementWrapper.clientHeight)
   const logoTexture = new THREE.TextureLoader().load('logo.svg')
   const uniforms = {
     uTex: {
