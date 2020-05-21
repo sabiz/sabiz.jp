@@ -13,6 +13,7 @@
     display: block;
     margin-right: auto;
     margin-left: auto;
+    width: 96px;
     border-radius: 50%; }
   .mkd strong, .mkd em {
     display: block;
@@ -36,216 +37,216 @@
       padding: 5px 1rem;
       border-radius: 2em; }
       .mkd .words span:nth-child(1) {
-        background-color: #ffcce0; }
+        background-color: #ffccee; }
       .mkd .words span:nth-child(2) {
-        background-color: #fffdcc; }
+        background-color: #ffd2cc; }
       .mkd .words span:nth-child(3) {
-        background-color: #ddffcc; }
+        background-color: #ecffcc; }
       .mkd .words span:nth-child(4) {
-        background-color: #ffccd3; }
+        background-color: #ccffda; }
       .mkd .words span:nth-child(5) {
-        background-color: #ccffdb; }
+        background-color: #ccfffc; }
       .mkd .words span:nth-child(6) {
-        background-color: #ffcce3; }
+        background-color: #ddffcc; }
       .mkd .words span:nth-child(7) {
-        background-color: #efccff;
+        background-color: #f4ffcc;
         break-after: always; }
       .mkd .words span:nth-child(8) {
-        background-color: #ffcccc; }
+        background-color: #eeffcc; }
       .mkd .words span:nth-child(9) {
-        background-color: #ccfff7; }
+        background-color: #ccffdc; }
       .mkd .words span:nth-child(10) {
-        background-color: #f5ccff; }
+        background-color: #f0ffcc; }
       .mkd .words span:nth-child(11) {
-        background-color: #d0ccff; }
+        background-color: #fff1cc; }
       .mkd .words span:nth-child(12) {
-        background-color: #ceffcc; }
+        background-color: #ccffdf; }
       .mkd .words span:nth-child(13) {
-        background-color: #ccfff0; }
+        background-color: #ffeacc; }
       .mkd .words span:nth-child(14) {
-        background-color: #ffe2cc;
+        background-color: #f8ccff;
         break-after: always; }
       .mkd .words span:nth-child(15) {
-        background-color: #ffccfd; }
+        background-color: #deffcc; }
       .mkd .words span:nth-child(16) {
-        background-color: #f7ccff; }
+        background-color: #ffeccc; }
       .mkd .words span:nth-child(17) {
-        background-color: #ffedcc; }
+        background-color: #ffccfd; }
       .mkd .words span:nth-child(18) {
-        background-color: #ffcdcc; }
+        background-color: #f1ffcc; }
       .mkd .words span:nth-child(19) {
-        background-color: #ccd5ff; }
+        background-color: #ccfffa; }
       .mkd .words span:nth-child(20) {
-        background-color: #ffd3cc; }
+        background-color: #ccffee; }
       .mkd .words span:nth-child(21) {
-        background-color: #ffd2cc;
+        background-color: #f0ffcc;
         break-after: always; }
       .mkd .words span:nth-child(22) {
-        background-color: #ffccf4; }
+        background-color: #ceffcc; }
       .mkd .words span:nth-child(23) {
-        background-color: #ffccea; }
+        background-color: #fcffcc; }
       .mkd .words span:nth-child(24) {
-        background-color: #fff9cc; }
+        background-color: #ffccdd; }
       .mkd .words span:nth-child(25) {
-        background-color: #ffccd0; }
+        background-color: #ffd1cc; }
       .mkd .words span:nth-child(26) {
-        background-color: #ccebff; }
+        background-color: #e4ffcc; }
       .mkd .words span:nth-child(27) {
-        background-color: #ffdacc; }
+        background-color: #ffd5cc; }
       .mkd .words span:nth-child(28) {
-        background-color: #ccf7ff;
+        background-color: #ccfcff;
         break-after: always; }
       .mkd .words span:nth-child(29) {
-        background-color: #d2ccff; }
+        background-color: #f4ccff; }
       .mkd .words span:nth-child(30) {
-        background-color: #ffcccd; }
+        background-color: #d0ffcc; }
       .mkd .words span:nth-child(31) {
-        background-color: #ccffd8; }
+        background-color: #ffcced; }
       .mkd .words span:nth-child(32) {
-        background-color: #fcffcc; }
+        background-color: #ccffce; }
       .mkd .words span:nth-child(33) {
-        background-color: #ccdaff; }
+        background-color: #ffccd3; }
       .mkd .words span:nth-child(34) {
-        background-color: #fcffcc; }
+        background-color: #ccebff; }
       .mkd .words span:nth-child(35) {
-        background-color: #eaccff;
+        background-color: #ffccd5;
         break-after: always; }
       .mkd .words span:nth-child(36) {
-        background-color: #ffd6cc; }
-      .mkd .words span:nth-child(37) {
-        background-color: #ffccd2; }
-      .mkd .words span:nth-child(38) {
-        background-color: #ccffcf; }
-      .mkd .words span:nth-child(39) {
-        background-color: #ffd4cc; }
-      .mkd .words span:nth-child(40) {
         background-color: #f5ccff; }
+      .mkd .words span:nth-child(37) {
+        background-color: #fcffcc; }
+      .mkd .words span:nth-child(38) {
+        background-color: #ffccd0; }
+      .mkd .words span:nth-child(39) {
+        background-color: #ffdfcc; }
+      .mkd .words span:nth-child(40) {
+        background-color: #ffccfb; }
       .mkd .words span:nth-child(41) {
-        background-color: #d0ffcc; }
+        background-color: #ccffd1; }
       .mkd .words span:nth-child(42) {
-        background-color: #ffccf0;
+        background-color: #ccffd3;
         break-after: always; }
       .mkd .words span:nth-child(43) {
-        background-color: #f3ffcc; }
+        background-color: #faccff; }
       .mkd .words span:nth-child(44) {
-        background-color: #cce9ff; }
+        background-color: #ffccf8; }
       .mkd .words span:nth-child(45) {
-        background-color: #ffebcc; }
+        background-color: #fff7cc; }
       .mkd .words span:nth-child(46) {
-        background-color: #ccd5ff; }
+        background-color: #ffebcc; }
       .mkd .words span:nth-child(47) {
-        background-color: #cfffcc; }
+        background-color: #e7ffcc; }
       .mkd .words span:nth-child(48) {
-        background-color: #cccfff; }
+        background-color: #ffccef; }
       .mkd .words span:nth-child(49) {
-        background-color: #dfffcc;
+        background-color: #ccdaff;
         break-after: always; }
       .mkd .words span:nth-child(50) {
-        background-color: #ffe9cc; }
+        background-color: #ffccf5; }
       .mkd .words span:nth-child(51) {
-        background-color: #ccffeb; }
+        background-color: #dbccff; }
       .mkd .words span:nth-child(52) {
-        background-color: #e9ffcc; }
+        background-color: #ccfffa; }
       .mkd .words span:nth-child(53) {
-        background-color: #ccfcff; }
+        background-color: #fff5cc; }
       .mkd .words span:nth-child(54) {
-        background-color: #cccfff; }
+        background-color: #d5ccff; }
       .mkd .words span:nth-child(55) {
-        background-color: #ccffff; }
+        background-color: #ffcce0; }
       .mkd .words span:nth-child(56) {
-        background-color: #ccffd8;
+        background-color: #cccdff;
         break-after: always; }
       .mkd .words span:nth-child(57) {
-        background-color: #ffcced; }
+        background-color: #d5ccff; }
       .mkd .words span:nth-child(58) {
-        background-color: #fffccc; }
+        background-color: #d5ccff; }
       .mkd .words span:nth-child(59) {
-        background-color: #ccf0ff; }
+        background-color: #ffebcc; }
       .mkd .words span:nth-child(60) {
-        background-color: #ccdcff; }
+        background-color: #d6ccff; }
       .mkd .words span:nth-child(61) {
-        background-color: #ccfff9; }
+        background-color: #ccfffa; }
       .mkd .words span:nth-child(62) {
-        background-color: #ccfff5; }
+        background-color: #d2ccff; }
       .mkd .words span:nth-child(63) {
-        background-color: #ffe9cc;
+        background-color: #ccfff2;
         break-after: always; }
       .mkd .words span:nth-child(64) {
-        background-color: #d3ccff; }
+        background-color: #ffe2cc; }
       .mkd .words span:nth-child(65) {
-        background-color: #cccdff; }
+        background-color: #fff7cc; }
       .mkd .words span:nth-child(66) {
-        background-color: #ffcfcc; }
+        background-color: #f7ccff; }
       .mkd .words span:nth-child(67) {
-        background-color: #eeffcc; }
+        background-color: #ccffd8; }
       .mkd .words span:nth-child(68) {
-        background-color: #cfffcc; }
+        background-color: #e6ffcc; }
       .mkd .words span:nth-child(69) {
-        background-color: #ffccf3; }
+        background-color: #ffd1cc; }
       .mkd .words span:nth-child(70) {
-        background-color: #dbccff;
+        background-color: #d6ccff;
         break-after: always; }
       .mkd .words span:nth-child(71) {
-        background-color: #e0ccff; }
+        background-color: #fff8cc; }
       .mkd .words span:nth-child(72) {
-        background-color: #ccdaff; }
+        background-color: #ccd4ff; }
       .mkd .words span:nth-child(73) {
-        background-color: #ebccff; }
+        background-color: #faccff; }
       .mkd .words span:nth-child(74) {
-        background-color: #ccffd8; }
+        background-color: #ccd0ff; }
       .mkd .words span:nth-child(75) {
-        background-color: #ccfff5; }
+        background-color: #f3ccff; }
       .mkd .words span:nth-child(76) {
-        background-color: #ffe6cc; }
+        background-color: #daccff; }
       .mkd .words span:nth-child(77) {
-        background-color: #ccd4ff;
+        background-color: #ccf5ff;
         break-after: always; }
       .mkd .words span:nth-child(78) {
-        background-color: #ccfff1; }
+        background-color: #feffcc; }
       .mkd .words span:nth-child(79) {
-        background-color: #ebffcc; }
+        background-color: #ffccfe; }
       .mkd .words span:nth-child(80) {
-        background-color: #ccffd4; }
+        background-color: #ccfff0; }
       .mkd .words span:nth-child(81) {
-        background-color: #ccffed; }
+        background-color: #e7ffcc; }
       .mkd .words span:nth-child(82) {
-        background-color: #ccf1ff; }
+        background-color: #ffcce6; }
       .mkd .words span:nth-child(83) {
-        background-color: #ccf4ff; }
+        background-color: #ccffda; }
       .mkd .words span:nth-child(84) {
-        background-color: #ccdcff;
+        background-color: #ccebff;
         break-after: always; }
       .mkd .words span:nth-child(85) {
-        background-color: #e0ffcc; }
+        background-color: #ecccff; }
       .mkd .words span:nth-child(86) {
-        background-color: #fbffcc; }
+        background-color: #ccffce; }
       .mkd .words span:nth-child(87) {
-        background-color: #ffdacc; }
+        background-color: #ccd0ff; }
       .mkd .words span:nth-child(88) {
-        background-color: #ffcce2; }
+        background-color: #cce4ff; }
       .mkd .words span:nth-child(89) {
-        background-color: #ccdfff; }
+        background-color: #ffccff; }
       .mkd .words span:nth-child(90) {
-        background-color: #ccfff7; }
+        background-color: #e6ffcc; }
       .mkd .words span:nth-child(91) {
-        background-color: #ffcce0;
+        background-color: #cdffcc;
         break-after: always; }
       .mkd .words span:nth-child(92) {
-        background-color: #ccffd5; }
+        background-color: #cceaff; }
       .mkd .words span:nth-child(93) {
-        background-color: #ffe6cc; }
+        background-color: #ccffd0; }
       .mkd .words span:nth-child(94) {
-        background-color: #f1ffcc; }
+        background-color: #d5ffcc; }
       .mkd .words span:nth-child(95) {
-        background-color: #cce4ff; }
+        background-color: #ccffd4; }
       .mkd .words span:nth-child(96) {
-        background-color: #ffccd1; }
+        background-color: #f8ccff; }
       .mkd .words span:nth-child(97) {
-        background-color: #e4ffcc; }
+        background-color: #cdccff; }
       .mkd .words span:nth-child(98) {
-        background-color: #eeffcc;
+        background-color: #ccfffc;
         break-after: always; }
       .mkd .words span:nth-child(99) {
-        background-color: #ccffcd; }
+        background-color: #ffccef; }
       .mkd .words span:nth-child(100) {
-        background-color: #d3ccff; }
+        background-color: #ffccff; }
