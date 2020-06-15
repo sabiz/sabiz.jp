@@ -4,6 +4,7 @@ npm run build
 cd ..
 rm -rf gh-pages/*
 cp master/dist/* gh-pages/.
+cp master/CNAME gh-pages/.
 cd gh-pages
 
 git config --global user.name "sabiz"
