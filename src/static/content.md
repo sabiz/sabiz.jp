@@ -23,7 +23,7 @@
 ![](https://img.shields.io/static/v1?style=flat&label=Back-End&message=⭐⭐⭐☆☆&color=FCC624&labelColor=FCC624)  
 
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐⭐&color=007396&logo=Java)
-![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐&color=FA7343&logo=Swift)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=FA7343&logo=Swift)
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=0095D5&logo=Kotlin)
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=3776AB&logo=Python)
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=F7DF1E&logo=JavaScript)  
