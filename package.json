@@ -30,7 +30,7 @@
     "stylelint": "^13.3.0",
     "svelte": "^3.0.0",
     "svelte-preprocess": "^3.7.1",
-    "three": "^0.115.0"
+    "three": "^0.125.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
