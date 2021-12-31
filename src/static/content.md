@@ -30,7 +30,7 @@
 
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=E34F26&logo=HTML5)
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=1572B6&logo=CSS3)
-![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=239120&logo=C-sharp)
+![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=239120&logo=C-sharp)
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=00599C&logo=C)
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐☆☆&color=4EAA25&logo=GNU-Bash)  
 
@@ -43,8 +43,11 @@
 - iOS app
 - Hybrid app (Cordova)
 
-### 2018~
+### 2018~2020
 - Image Recognition (Deep learning & Image processing)
 - Data science (Machine learning)
 
+### 2021
+- Data science (Machine learning)
+- Mobile native library(C/C++)
 
