@@ -1,3 +1,27 @@
+main.svelte-tp37s0 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw; }
+
+.space.svelte-tp37s0 {
+  margin-bottom: 3rem; }
+
+.copyright.svelte-tp37s0 {
+  font-size: x-small;
+  margin-bottom: 1rem; }
+
+.signature-wrapper.svelte-1gkwezo {
+  width: 50vw;
+  height: 28.125vw;
+  border-radius: 15px;
+  overflow: hidden; }
+
 .mkd {
   margin: 0 auto; }
   .mkd h2::before {
@@ -37,216 +61,381 @@
       padding: 5px 1rem;
       border-radius: 2em; }
       .mkd .words span:nth-child(1) {
-        background-color: #ffccf9; }
+        background-color: #fff9cc; }
       .mkd .words span:nth-child(2) {
-        background-color: #fff6cc; }
+        background-color: #ccffd5; }
       .mkd .words span:nth-child(3) {
-        background-color: #ccfcff; }
+        background-color: #ccfff7; }
       .mkd .words span:nth-child(4) {
-        background-color: #ffebcc; }
+        background-color: #ffd4cc; }
       .mkd .words span:nth-child(5) {
-        background-color: #ccffeb; }
+        background-color: #ffccf7; }
       .mkd .words span:nth-child(6) {
-        background-color: #fff5cc; }
+        background-color: #daffcc; }
       .mkd .words span:nth-child(7) {
-        background-color: #ebffcc;
+        background-color: #fcffcc;
         break-after: always; }
       .mkd .words span:nth-child(8) {
-        background-color: #e7ccff; }
+        background-color: #ccffce; }
       .mkd .words span:nth-child(9) {
-        background-color: #ccd9ff; }
-      .mkd .words span:nth-child(10) {
-        background-color: #ffccfc; }
-      .mkd .words span:nth-child(11) {
         background-color: #ccfcff; }
+      .mkd .words span:nth-child(10) {
+        background-color: #fdccff; }
+      .mkd .words span:nth-child(11) {
+        background-color: #ebffcc; }
       .mkd .words span:nth-child(12) {
-        background-color: #ffeccc; }
+        background-color: #ffccd8; }
       .mkd .words span:nth-child(13) {
-        background-color: #d2ffcc; }
+        background-color: #ccfff7; }
       .mkd .words span:nth-child(14) {
-        background-color: #cce3ff;
+        background-color: #cceaff;
         break-after: always; }
       .mkd .words span:nth-child(15) {
-        background-color: #fcccff; }
+        background-color: #cce8ff; }
       .mkd .words span:nth-child(16) {
-        background-color: #fff6cc; }
+        background-color: #ffccfb; }
       .mkd .words span:nth-child(17) {
-        background-color: #ffd5cc; }
+        background-color: #ffcfcc; }
       .mkd .words span:nth-child(18) {
-        background-color: #ccffda; }
+        background-color: #feccff; }
       .mkd .words span:nth-child(19) {
-        background-color: #ffd4cc; }
+        background-color: #ffccfe; }
       .mkd .words span:nth-child(20) {
-        background-color: #ccfffd; }
+        background-color: #ffccff; }
       .mkd .words span:nth-child(21) {
-        background-color: #ffccf3;
+        background-color: #ccf8ff;
         break-after: always; }
       .mkd .words span:nth-child(22) {
-        background-color: #ccfaff; }
+        background-color: #cfffcc; }
       .mkd .words span:nth-child(23) {
-        background-color: #ffdbcc; }
+        background-color: #ccdaff; }
       .mkd .words span:nth-child(24) {
-        background-color: #ccfdff; }
+        background-color: #ccffee; }
       .mkd .words span:nth-child(25) {
-        background-color: #ffd5cc; }
+        background-color: #cce3ff; }
       .mkd .words span:nth-child(26) {
-        background-color: #f5ccff; }
+        background-color: #e6ffcc; }
       .mkd .words span:nth-child(27) {
-        background-color: #deffcc; }
+        background-color: #ffcce6; }
       .mkd .words span:nth-child(28) {
-        background-color: #ccfff7;
+        background-color: #dfffcc;
         break-after: always; }
       .mkd .words span:nth-child(29) {
-        background-color: #ccebff; }
+        background-color: #e4ccff; }
       .mkd .words span:nth-child(30) {
-        background-color: #d0ffcc; }
+        background-color: #cdccff; }
       .mkd .words span:nth-child(31) {
-        background-color: #d4ffcc; }
+        background-color: #ffddcc; }
       .mkd .words span:nth-child(32) {
-        background-color: #ffccf1; }
+        background-color: #e7ffcc; }
       .mkd .words span:nth-child(33) {
-        background-color: #ffffcc; }
+        background-color: #ffefcc; }
       .mkd .words span:nth-child(34) {
-        background-color: #d7ccff; }
+        background-color: #ccffe9; }
       .mkd .words span:nth-child(35) {
-        background-color: #ffccf8;
+        background-color: #ffccd4;
         break-after: always; }
       .mkd .words span:nth-child(36) {
-        background-color: #cce6ff; }
+        background-color: #ccfff0; }
       .mkd .words span:nth-child(37) {
-        background-color: #cce5ff; }
+        background-color: #ccefff; }
       .mkd .words span:nth-child(38) {
-        background-color: #cfccff; }
+        background-color: #ffdacc; }
       .mkd .words span:nth-child(39) {
-        background-color: #d3ccff; }
+        background-color: #e1ffcc; }
       .mkd .words span:nth-child(40) {
-        background-color: #e0ccff; }
+        background-color: #ffccd5; }
       .mkd .words span:nth-child(41) {
-        background-color: #cfccff; }
+        background-color: #cce4ff; }
       .mkd .words span:nth-child(42) {
-        background-color: #cccfff;
+        background-color: #ffcdcc;
         break-after: always; }
       .mkd .words span:nth-child(43) {
-        background-color: #fff7cc; }
+        background-color: #ffdecc; }
       .mkd .words span:nth-child(44) {
-        background-color: #ffefcc; }
+        background-color: #ccffe9; }
       .mkd .words span:nth-child(45) {
-        background-color: #ffe3cc; }
+        background-color: #dbffcc; }
       .mkd .words span:nth-child(46) {
-        background-color: #cce2ff; }
+        background-color: #fbccff; }
       .mkd .words span:nth-child(47) {
-        background-color: #ccffcd; }
+        background-color: #f4ffcc; }
       .mkd .words span:nth-child(48) {
-        background-color: #ceccff; }
+        background-color: #ffccf3; }
       .mkd .words span:nth-child(49) {
-        background-color: #dbccff;
+        background-color: #ffe9cc;
         break-after: always; }
       .mkd .words span:nth-child(50) {
-        background-color: #d1ccff; }
+        background-color: #ccfff1; }
       .mkd .words span:nth-child(51) {
-        background-color: #ccdbff; }
+        background-color: #cdffcc; }
       .mkd .words span:nth-child(52) {
-        background-color: #ccffcd; }
+        background-color: #ffccfb; }
       .mkd .words span:nth-child(53) {
-        background-color: #cce6ff; }
+        background-color: #ccfff8; }
       .mkd .words span:nth-child(54) {
-        background-color: #ffd8cc; }
+        background-color: #ccebff; }
       .mkd .words span:nth-child(55) {
-        background-color: #fffccc; }
+        background-color: #ffe6cc; }
       .mkd .words span:nth-child(56) {
-        background-color: #ddccff;
+        background-color: #fff7cc;
         break-after: always; }
       .mkd .words span:nth-child(57) {
-        background-color: #ccf0ff; }
+        background-color: #ccffff; }
       .mkd .words span:nth-child(58) {
-        background-color: #ccffcc; }
+        background-color: #ffd5cc; }
       .mkd .words span:nth-child(59) {
-        background-color: #faffcc; }
+        background-color: #ccf7ff; }
       .mkd .words span:nth-child(60) {
-        background-color: #e9ffcc; }
+        background-color: #ffefcc; }
       .mkd .words span:nth-child(61) {
-        background-color: #ccf9ff; }
+        background-color: #cceeff; }
       .mkd .words span:nth-child(62) {
-        background-color: #ccffdc; }
+        background-color: #ccfff1; }
       .mkd .words span:nth-child(63) {
-        background-color: #ffe6cc;
+        background-color: #ccffe9;
         break-after: always; }
       .mkd .words span:nth-child(64) {
-        background-color: #ffe9cc; }
+        background-color: #ccdbff; }
       .mkd .words span:nth-child(65) {
-        background-color: #ccecff; }
+        background-color: #cccdff; }
       .mkd .words span:nth-child(66) {
-        background-color: #ffdfcc; }
+        background-color: #faffcc; }
       .mkd .words span:nth-child(67) {
-        background-color: #f6ccff; }
+        background-color: #ccffea; }
       .mkd .words span:nth-child(68) {
-        background-color: #ffcced; }
+        background-color: #ffeecc; }
       .mkd .words span:nth-child(69) {
-        background-color: #ccffe6; }
+        background-color: #ccffd6; }
       .mkd .words span:nth-child(70) {
-        background-color: #ccffde;
+        background-color: #ffccd7;
         break-after: always; }
       .mkd .words span:nth-child(71) {
-        background-color: #ccffea; }
+        background-color: #ccdeff; }
       .mkd .words span:nth-child(72) {
-        background-color: #e0ccff; }
+        background-color: #ffccdf; }
       .mkd .words span:nth-child(73) {
-        background-color: #ccffd5; }
+        background-color: #ccf8ff; }
       .mkd .words span:nth-child(74) {
-        background-color: #ffd5cc; }
+        background-color: #ffd1cc; }
       .mkd .words span:nth-child(75) {
-        background-color: #ffccd5; }
+        background-color: #ffe8cc; }
       .mkd .words span:nth-child(76) {
-        background-color: #cceeff; }
+        background-color: #ccf3ff; }
       .mkd .words span:nth-child(77) {
-        background-color: #ccffde;
+        background-color: #ccf6ff;
         break-after: always; }
       .mkd .words span:nth-child(78) {
-        background-color: #cce5ff; }
+        background-color: #ffdccc; }
       .mkd .words span:nth-child(79) {
-        background-color: #ccdcff; }
+        background-color: #ffcce5; }
       .mkd .words span:nth-child(80) {
-        background-color: #ccffd7; }
+        background-color: #ffcdcc; }
       .mkd .words span:nth-child(81) {
-        background-color: #ccffeb; }
+        background-color: #e4ffcc; }
       .mkd .words span:nth-child(82) {
-        background-color: #ddffcc; }
+        background-color: #dfffcc; }
       .mkd .words span:nth-child(83) {
-        background-color: #ccffd7; }
+        background-color: #d5ffcc; }
       .mkd .words span:nth-child(84) {
-        background-color: #ffccdd;
+        background-color: #ffcce4;
         break-after: always; }
       .mkd .words span:nth-child(85) {
-        background-color: #ffcccf; }
+        background-color: #ccfcff; }
       .mkd .words span:nth-child(86) {
-        background-color: #ccf7ff; }
-      .mkd .words span:nth-child(87) {
-        background-color: #ffd2cc; }
-      .mkd .words span:nth-child(88) {
-        background-color: #ffccd8; }
-      .mkd .words span:nth-child(89) {
         background-color: #d9ffcc; }
+      .mkd .words span:nth-child(87) {
+        background-color: #fdccff; }
+      .mkd .words span:nth-child(88) {
+        background-color: #cce3ff; }
+      .mkd .words span:nth-child(89) {
+        background-color: #e1ccff; }
       .mkd .words span:nth-child(90) {
-        background-color: #fbffcc; }
+        background-color: #ffe1cc; }
       .mkd .words span:nth-child(91) {
-        background-color: #ffddcc;
+        background-color: #edffcc;
         break-after: always; }
       .mkd .words span:nth-child(92) {
-        background-color: #d9ccff; }
+        background-color: #ebccff; }
       .mkd .words span:nth-child(93) {
-        background-color: #ccfff0; }
+        background-color: #eeccff; }
       .mkd .words span:nth-child(94) {
-        background-color: #cfccff; }
+        background-color: #ffe2cc; }
       .mkd .words span:nth-child(95) {
-        background-color: #ccf7ff; }
+        background-color: #fffccc; }
       .mkd .words span:nth-child(96) {
-        background-color: #ccffed; }
+        background-color: #ccffce; }
       .mkd .words span:nth-child(97) {
-        background-color: #ffcceb; }
+        background-color: #f2ccff; }
       .mkd .words span:nth-child(98) {
-        background-color: #fff8cc;
+        background-color: #ffccf9;
         break-after: always; }
       .mkd .words span:nth-child(99) {
-        background-color: #ffccf0; }
+        background-color: #ccffe7; }
       .mkd .words span:nth-child(100) {
-        background-color: #fcffcc; }
+        background-color: #ffccda; }
+
+span.svelte-1157blt:nth-child(0) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 0ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(1) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 100ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(2) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 200ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(3) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 300ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(4) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 400ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(5) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(6) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 600ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(7) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 700ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(8) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 800ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(9) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 900ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(10) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 1000ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(11) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 1100ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(12) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 1200ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+span.svelte-1157blt:nth-child(13) {
+  display: inline-block;
+  animation-name: svelte-1157blt-loadAnim;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-delay: 1300ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running; }
+
+@keyframes svelte-1157blt-loadAnim {
+  0% {
+    opacity: 0;
+    transform: scale(3); }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.5); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
