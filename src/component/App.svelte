@@ -8,7 +8,7 @@ import Markdown from './Markdown.svelte'
   <div class="space"/>
   <Markdown markdownUrl='./content.md'/>
   <div class="space"/>
-  <span class="copyright">(c) 2013 sAbIz</span>
+  <small class="copyright">(c) 2013 sAbIz</small>
 </main>
 
 <style type="scss">
