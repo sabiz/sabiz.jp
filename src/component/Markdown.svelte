@@ -2,11 +2,6 @@
   import './Markdown.scss'
   import Loading from './Loading.svelte'
   import marked from 'marked'
-  import { dom, library } from '@fortawesome/fontawesome-svg-core'
-  import { faTwitter, faGithub } from '@fortawesome/free-brands-svg-icons'
-  import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-  library.add(faTwitter, faGithub, faEnvelope)
-  dom.watch()
 
   export let markdownUrl
 
