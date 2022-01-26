@@ -1,7 +1,7 @@
 <script>
   import './Markdown.scss'
   import Loading from './Loading.svelte'
-  import marked from 'marked'
+  import { marked } from 'marked'
 
   export let markdownUrl
 

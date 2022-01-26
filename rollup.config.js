@@ -22,7 +22,6 @@ export default {
   },
   plugins: [
     svelte({
-      dev: !production,
       preprocess: autoPreprocess()
     }),
     copy({
@@ -45,7 +44,7 @@ export default {
     sizes(),
     command([
       'eslint src --ext svelte,js',
-      'stylelint **/*.scss'
+      'stylelint --custom-syntax postcss-scss **/*.scss'
     ], {exitOnFail: true}),
 
     !production && serve(),
