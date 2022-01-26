@@ -22,6 +22,8 @@
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=000000&logo=iOS)
 ![](https://img.shields.io/static/v1?style=flat&label=Front-End&message=⭐⭐⭐☆☆&color=4285F4&labelColor=4285F4)
 ![](https://img.shields.io/static/v1?style=flat&label=Back-End&message=⭐⭐⭐☆☆&color=FCC624&labelColor=FCC624)  
+![](https://img.shields.io/static/v1?style=flat&label=&message=⭐⭐⭐☆☆&color=FF9900&labelColor=FF9900&logo=amazonaws)
+![](https://img.shields.io/static/v1?style=flat&label=&message=⭐⭐⭐☆☆&color=008AD7&labelColor=008AD7&logo=microsoftazure)
 
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐⭐&color=007396&logo=Java)
 ![](https://img.shields.io/static/v1?style=flat&logoColor=white&label=&message=⭐⭐⭐⭐☆&color=FA7343&logo=Swift)
@@ -48,7 +50,9 @@
 - Image Recognition (Deep learning & Image processing)
 - Data science (Machine learning)
 
-### 2021
+### 2020~2021
 - Data science (Machine learning)
 - Mobile native library(C/C++)
 
+### 2022
+- Back-End infrastructure & app (AWS)
