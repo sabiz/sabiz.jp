@@ -1,40 +1,19 @@
 {
   "name": "sabiz.jp",
-  "version": "1.0.0",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv dist"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^21.0.1",
-    "@rollup/plugin-node-resolve": "^13.1.3",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.4",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.2.0",
-    "eslint-plugin-standard": "^5.0.0",
-    "eslint-plugin-svelte3": "^3.4.0",
-    "install": "^0.13.0",
-    "marked": "^4.0.10",
-    "node-sass": "^7.0.1",
-    "postcss-scss": "^4.0.3",
-    "rollup": "^2.66.1",
-    "rollup-plugin-command": "^1.1.3",
-    "rollup-plugin-copy": "^3.4.0",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-scss": "^3.0.0",
-    "rollup-plugin-shader": "0.0.3",
-    "rollup-plugin-sizes": "^1.0.4",
-    "rollup-plugin-svelte": "^7.1.0",
-    "rollup-plugin-terser": "^7.0.2",
-    "stylelint": "^14.3.0",
-    "svelte": "^3.49.0",
-    "svelte-preprocess": "^4.10.2",
-    "three": "^0.137.0"
-  },
-  "dependencies": {
-    "sirv-cli": "^2.0.2"
+    "@egoist/tailwindcss-icons": "^1.9.0",
+    "@iconify-json/codicon": "^1.2.31",
+    "@iconify-json/logos": "^1.2.9",
+    "@tailwindcss/vite": "^4.1.13",
+    "astro": "^5.14.1",
+    "tailwindcss": "^4.1.13"
   }
 }

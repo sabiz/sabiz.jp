@@ -1,0 +1,201 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProfileIcon from '../components/ProfileIcon.astro';
+import Repository from '../components/Repository.astro';
+---
+
+<Layout>
+  <div class="container mx-auto my-10 max-w-7xl flex flex-col">
+    <!-- Theme Toggle Button -->
+    <div class="flex justify-end mb-4">
+      <button id="theme-toggle" class="theme-toggle px-4 py-2 rounded-full text-sm font-medium transition-all">
+        <span class="theme-toggle-icon">🌙</span>
+      </button>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="p-10 grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-10">
+
+      <!-- Left Column -->
+      <div class="flex flex-col items-center text-center pb-8 lg:pb-0">
+      <ProfileIcon />
+      <div class="text-md px-6 py rounded-md text-lg mt-2 bg-(image:--gradient-sunflower-soft) text-(--accent-sunflower-soft-text)">
+        sAbIz
+      </div>
+      <p class="text-sm mt-2 text-(--ink-secondary)">
+        Software Engineer@Tokyo, Japan
+      </p>
+      
+      <!-- Social Icons -->
+      <div class="flex gap-4 mt-8">
+        {
+          [{"link": "https://x.com/t0mu_twit", "icon": "i-logos-x"},
+           {"link": "https://github.com/sabiz", "icon": "i-logos-github-icon"},
+            {"link": "mailto:bellett@sabiz.jp", "icon": "i-codicon-mail"}].map(({link, icon}) => (
+              <a href={link} target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full text-gray-950 bg-(image:--gradient-sunflower-soft) hover:bg-(image:--gradient-sunflower-strong-hov) transition-all"><span class={icon + " text-2xl"}></span></a>
+            ))
+        }
+      </div>
+      
+      <!-- Repos Section -->
+      <div class="w-full mt-12">
+        <h2 class="section-title">
+          Repos
+        </h2>
+        <div class="space-y-8">
+          {
+            [
+              "KASURI", "cpqa-Dashboard-Evo", "Awesome", "skyline-color.nvim","dotfiles"
+            ].map((repo) => (
+              <Repository repoName={repo} />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="pt-0">
+      <!-- Skills Section -->
+      <div class="mb-10">
+        <h2 class="section-title">
+          Skills
+        </h2>
+        <div class="grid grid-cols-3 md:grid-cols-5 gap-4 mb-10">
+          {Array(15).fill(0).map(() => (
+            <div class="skill-box aspect-square rounded-xl"></div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Career Section -->
+      <div>
+        <h2 class="section-title">
+          Career
+        </h2>
+        <div>
+          <div class="flex items-center text-sm mb-2.5 timeline-text">
+            <div class="timeline-line h-0.5 w-12"></div>
+            <span class="px-3">2013〜2018</span>
+            <div class="timeline-line h-0.5 w-12"></div>
+          </div>
+          <ul class="career-list list-disc list-inside space-y-1">
+            <li>Android system app</li>
+            <li>iOS app</li>
+            <li>Hybrid app (Cordova)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="flex items-center text-sm mb-2.5 timeline-text">
+            <div class="timeline-line h-0.5 w-12"></div>
+            <span class="px-3">2018〜2020</span>
+            <div class="timeline-line h-0.5 w-12"></div>
+          </div>
+          <ul class="career-list list-disc list-inside space-y-1">
+            <li>Image Recognition (Deep learning & Image processing)</li>
+            <li>Data science (Machine learning)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="flex items-center text-sm mb-2.5 timeline-text">
+            <div class="timeline-line h-0.5 w-12"></div>
+            <span class="px-3">2020〜2021</span>
+            <div class="timeline-line h-0.5 w-12"></div>
+          </div>
+          <ul class="career-list list-disc list-inside space-y-1">
+            <li>Data science (Machine learning)</li>
+            <li>Mobile native library(C/C++)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="flex items-center text-sm mb-2.5 timeline-text">
+            <div class="timeline-line h-0.5 w-12"></div>
+            <span class="px-3">2021〜</span>
+            <div class="timeline-line h-0.5 w-12"></div>
+          </div>
+          <ul class="career-list list-disc list-inside space-y-1">
+            <li>Back-End infrastructure & app (AWS)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <!-- Copyright at Bottom Center -->
+    <p class="copyright text-xs text-center py-6">
+      (c)2013 sAbIz
+    </p>
+  </div>
+</Layout>
+
+<style>
+   @reference "tailwindcss";
+  /* Theme Toggle Button */
+  .theme-toggle {
+    background: var(--gradient-sunflower-soft);
+    color: var(--accent-sunflower-soft-text);
+    cursor: pointer;
+    border: none;
+  }
+
+  .theme-toggle:hover {
+    background: var(--gradient-sunflower-strong-hov);
+  }
+
+  /* Section Title */
+  .section-title {
+    background: var(--gradient-sunflower-soft);
+    color: var(--accent-sunflower-soft-text);
+    @apply py-2.5 px-5 rounded-md text-center text-xl mb-5;
+  }
+
+  /* Skill Boxes */
+  .skill-box {
+    background: var(--surface-subtle);
+    border: 1px solid var(--border-hairline);
+  }
+
+  /* Timeline */
+  .timeline-text {
+    color: var(--ink-muted);
+  }
+
+  .timeline-line {
+    background: linear-gradient(to right, var(--accent-leaf-soft-start), var(--accent-leaf-soft-end));
+  }
+
+  /* Career List */
+  .career-list {
+    color: var(--ink-primary);
+  }
+
+  /* Copyright */
+  .copyright {
+    color: var(--ink-muted);
+  }
+</style>
+
+<script>
+  // Theme toggle functionality
+  const themeToggle = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+  
+  // Check for saved theme preference or default to 'light'
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  html.setAttribute('data-theme', currentTheme);
+  updateToggleIcon(currentTheme);
+  
+  themeToggle?.addEventListener('click', () => {
+    const theme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    updateToggleIcon(theme);
+  });
+  
+  function updateToggleIcon(theme: string) {
+    const icon = document.querySelector('.theme-toggle-icon');
+    if (icon) {
+      icon.textContent = theme === 'light' ? '🌙' : '☀️';
+    }
+  }
+</script>
