@@ -1,11 +1,45 @@
 ---
-
 const repoName = Astro.props.repoName || '';
-console.log(repoName);
+const repoUrl = `https://github.com/sabiz/${repoName}`;
 
+// サーバーサイド（ビルド時）でOGP情報を取得
+let ogpData = null;
+try {
+  const response = await fetch(repoUrl);
+  const html = await response.text();
+  
+  const getMetaContent = (html: string, property: string) => {
+    const regex = new RegExp(`<meta\\s+(?:property|name)="${property}"\\s+content="([^"]*)"`, 'i');
+    const match = html.match(regex);
+    return match ? match[1] : '';
+  };
+  
+  ogpData = {
+    title: getMetaContent(html, 'og:title'),
+    description: getMetaContent(html, 'og:description'),
+    image: getMetaContent(html, 'og:image')
+  };
+} catch (error) {
+  console.error('Failed to fetch OGP data:', error);
+}
 ---
 
-
-<div class="repo-item w-full h-14 rounded-lg bg-(--surface-subtle) border border-solid border-(--border-hairline)"></div>
-
-
+{ogpData ? (
+  <div class="repo-item w-full rounded-lg bg-(--surface-subtle) border border-solid border-(--border-hairline)">
+    <a href={repoUrl} target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 p-3 no-underline">
+      {ogpData.image && (
+        <img src={ogpData.image} alt={ogpData.title} class="rounded object-cover" />
+      )}
+      {/* <div class="flex-1 min-w-0">
+        <h3 class="font-semibold text-sm truncate">{ogpData.title}</h3>
+        <p class="text-xs text-gray-600 truncate">{ogpData.description}</p>
+      </div> */}
+    </a>
+  </div>
+) : (
+  <div class="repo-item w-full h-14 rounded-lg bg-(--surface-subtle) border border-solid border-(--border-hairline) flex items-center p-3">
+    <a href={repoUrl} target="_blank" rel="noopener noreferrer" class="no-underline">
+      {repoName}
+    </a>
+  </div>
+)}
