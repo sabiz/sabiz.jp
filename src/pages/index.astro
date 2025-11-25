@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import ProfileIcon from '../components/ProfileIcon.astro';
 import Repository from '../components/Repository.astro';
+import SkillIcon from '../components/SkillIcon.astro';
 ---
 
 <Layout>
@@ -61,10 +62,29 @@ import Repository from '../components/Repository.astro';
         <h2 class="section-title">
           Skills
         </h2>
-        <div class="grid grid-cols-3 md:grid-cols-5 gap-4 mb-10">
-          {Array(15).fill(0).map(() => (
-            <div class="skill-box aspect-square rounded-xl"></div>
-          ))}
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-4 mb-10">
+          {
+            [
+              // Languages
+              "py", "cpp", "c", "cs", "java",
+              "kotlin", "swift", "rust", "js", "ts",
+              // Frontend
+              "html", "css", "tailwind", "svelte", "astro",
+              // Backend & Frameworks
+              "nodejs", "express", "spring", "electron", "tauri",
+              // Databases
+              "mysql", "postgres", "sqlite", "redis",
+              // DevOps & Cloud
+              "docker", "aws", "nginx", "raspberrypi",
+              // Tools & IDEs
+              "git", "github", "vscode", "neovim", "vim",
+              "visualstudio", "androidstudio", "gradle", "cmake", "vite",
+              // Others
+              "bash", "powershell", "opencv", "sklearn"
+            ].map((skill) => (
+              <SkillIcon skill={skill} />
+            ))
+          }
         </div>
       </div>
 
@@ -147,12 +167,6 @@ import Repository from '../components/Repository.astro';
     background: var(--gradient-sunflower-soft);
     color: var(--accent-sunflower-soft-text);
     @apply py-2.5 px-5 rounded-md text-center text-xl mb-5;
-  }
-
-  /* Skill Boxes */
-  .skill-box {
-    background: var(--surface-subtle);
-    border: 1px solid var(--border-hairline);
   }
 
   /* Timeline */
