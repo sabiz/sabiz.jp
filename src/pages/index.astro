@@ -3,6 +3,74 @@ import Layout from '../layouts/Layout.astro';
 import ProfileIcon from '../components/ProfileIcon.astro';
 import Repository from '../components/Repository.astro';
 import SkillIcon from '../components/SkillIcon.astro';
+
+// Social Links
+const socialLinks = [
+  { link: "https://x.com/t0mu_twit", icon: "i-logos-x" },
+  { link: "https://github.com/sabiz", icon: "i-logos-github-icon" },
+  { link: "mailto:bellett@sabiz.jp", icon: "i-codicon-mail" }
+];
+
+// Repositories
+const repositories = [
+  "KASURI",
+  "cpqa-Dashboard-Evo",
+  "Awesome",
+  "skyline-color.nvim",
+  "dotfiles"
+];
+
+// Skills
+const skills = [
+  // Languages
+  "py", "cpp", "c", "cs", "java",
+  "kotlin", "swift", "rust", "js", "ts",
+  // Frontend
+  "html", "css", "tailwind", "svelte", "astro",
+  // Backend & Frameworks
+  "nodejs", "express", "spring", "electron", "tauri",
+  // Databases
+  "mysql", "postgres", "sqlite", "redis",
+  // DevOps & Cloud
+  "docker", "aws", "nginx", "raspberrypi",
+  // Tools & IDEs
+  "git", "github", "vscode", "neovim", "vim",
+  "visualstudio", "androidstudio", "gradle", "cmake", "vite",
+  // Others
+  "bash", "powershell", "opencv", "sklearn"
+];
+
+// Career Timeline
+const careerTimeline = [
+  {
+    period: "2013〜2018",
+    items: [
+      "Android system app",
+      "iOS app",
+      "Hybrid app (Cordova)"
+    ]
+  },
+  {
+    period: "2018〜2020",
+    items: [
+      "Image Recognition (Deep learning & Image processing)",
+      "Data science (Machine learning)"
+    ]
+  },
+  {
+    period: "2020〜2021",
+    items: [
+      "Data science (Machine learning)",
+      "Mobile native library(C/C++)"
+    ]
+  },
+  {
+    period: "2021〜",
+    items: [
+      "Back-End infrastructure & app (AWS)"
+    ]
+  }
+];
 ---
 
 <Layout>
@@ -30,11 +98,9 @@ import SkillIcon from '../components/SkillIcon.astro';
       <!-- Social Icons -->
       <div class="flex gap-4 mt-8">
         {
-          [{"link": "https://x.com/t0mu_twit", "icon": "i-logos-x"},
-           {"link": "https://github.com/sabiz", "icon": "i-logos-github-icon"},
-            {"link": "mailto:bellett@sabiz.jp", "icon": "i-codicon-mail"}].map(({link, icon}) => (
-              <a href={link} target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full text-gray-950 bg-(image:--gradient-sunflower-soft) hover:bg-(image:--gradient-sunflower-strong-hov) transition-all"><span class={icon + " text-2xl"}></span></a>
-            ))
+          socialLinks.map(({link, icon}) => (
+            <a href={link} target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full text-gray-950 bg-(image:--gradient-sunflower-soft) hover:bg-(image:--gradient-sunflower-strong-hov) transition-all"><span class={icon + " text-2xl"}></span></a>
+          ))
         }
       </div>
       
@@ -45,9 +111,7 @@ import SkillIcon from '../components/SkillIcon.astro';
         </h2>
         <div class="space-y-8">
           {
-            [
-              "KASURI", "cpqa-Dashboard-Evo", "Awesome", "skyline-color.nvim","dotfiles"
-            ].map((repo) => (
+            repositories.map((repo) => (
               <Repository repoName={repo} />
             ))
           }
@@ -64,24 +128,7 @@ import SkillIcon from '../components/SkillIcon.astro';
         </h2>
         <div class="grid grid-cols-3 md:grid-cols-6 gap-4 mb-10">
           {
-            [
-              // Languages
-              "py", "cpp", "c", "cs", "java",
-              "kotlin", "swift", "rust", "js", "ts",
-              // Frontend
-              "html", "css", "tailwind", "svelte", "astro",
-              // Backend & Frameworks
-              "nodejs", "express", "spring", "electron", "tauri",
-              // Databases
-              "mysql", "postgres", "sqlite", "redis",
-              // DevOps & Cloud
-              "docker", "aws", "nginx", "raspberrypi",
-              // Tools & IDEs
-              "git", "github", "vscode", "neovim", "vim",
-              "visualstudio", "androidstudio", "gradle", "cmake", "vite",
-              // Others
-              "bash", "powershell", "opencv", "sklearn"
-            ].map((skill) => (
+            skills.map((skill) => (
               <SkillIcon skill={skill} />
             ))
           }
@@ -93,56 +140,24 @@ import SkillIcon from '../components/SkillIcon.astro';
         <h2 class="section-title">
           Career
         </h2>
-        <div>
-          <div class="flex items-center text-sm mb-2.5 timeline-text">
-            <div class="timeline-line h-0.5 w-12"></div>
-            <span class="px-3">2013〜2018</span>
-            <div class="timeline-line h-0.5 w-12"></div>
-          </div>
-          <ul class="career-list list-disc list-inside space-y-1">
-            <li>Android system app</li>
-            <li>iOS app</li>
-            <li>Hybrid app (Cordova)</li>
-          </ul>
-        </div>
-        <div>
-          <div class="flex items-center text-sm mb-2.5 timeline-text">
-            <div class="timeline-line h-0.5 w-12"></div>
-            <span class="px-3">2018〜2020</span>
-            <div class="timeline-line h-0.5 w-12"></div>
-          </div>
-          <ul class="career-list list-disc list-inside space-y-1">
-            <li>Image Recognition (Deep learning & Image processing)</li>
-            <li>Data science (Machine learning)</li>
-          </ul>
-        </div>
-        <div>
-          <div class="flex items-center text-sm mb-2.5 timeline-text">
-            <div class="timeline-line h-0.5 w-12"></div>
-            <span class="px-3">2020〜2021</span>
-            <div class="timeline-line h-0.5 w-12"></div>
-          </div>
-          <ul class="career-list list-disc list-inside space-y-1">
-            <li>Data science (Machine learning)</li>
-            <li>Mobile native library(C/C++)</li>
-          </ul>
-        </div>
-        <div>
-          <div class="flex items-center text-sm mb-2.5 timeline-text">
-            <div class="timeline-line h-0.5 w-12"></div>
-            <span class="px-3">2021〜</span>
-            <div class="timeline-line h-0.5 w-12"></div>
-          </div>
-          <ul class="career-list list-disc list-inside space-y-1">
-            <li>Back-End infrastructure & app (AWS)</li>
-          </ul>
-        </div>
+        {
+          careerTimeline.map(({period, items}) => (
+            <div class="mb-6">
+              <h3 class="text-lg font-semibold text-(--ink-muted) mb-2">{period}</h3>
+              <ul class="career-list list-disc list-inside space-y-1 pl-2">
+                {items.map((item) => (
+                  <li>{item}</li>
+                ))}
+              </ul>
+            </div>
+          ))
+        }
       </div>
     </div>
     </div>
     
     <!-- Copyright at Bottom Center -->
-    <p class="copyright text-xs text-center py-6">
+    <p class="text-xs text-center py-6 text-(--ink-muted)">
       (c)2013 sAbIz
     </p>
   </div>
@@ -169,24 +184,11 @@ import SkillIcon from '../components/SkillIcon.astro';
     @apply py-2.5 px-5 rounded-md text-center text-xl mb-5;
   }
 
-  /* Timeline */
-  .timeline-text {
-    color: var(--ink-muted);
-  }
-
-  .timeline-line {
-    background: linear-gradient(to right, var(--accent-leaf-soft-start), var(--accent-leaf-soft-end));
-  }
-
   /* Career List */
   .career-list {
     color: var(--ink-primary);
   }
 
-  /* Copyright */
-  .copyright {
-    color: var(--ink-muted);
-  }
 </style>
 
 <script>
