@@ -2,28 +2,47 @@ name: Deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: ["master"]
 
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   deploy_job:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout [master]
-      uses: actions/checkout@v6
-      with:
-        path: master
-    - name: Checkout [gh-pages]
-      uses: actions/checkout@v6
-      with:
-        ref: gh-pages
-        path: gh-pages
-    - uses: actions/setup-node@v6
-      with:
-        node-version: '22'
-    - name: Run script
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: master/script/deploy.sh
+      - name: Checkout
+        uses: actions/checkout@v6
 
+      - name: Setup Node.js
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
 
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Setup Pages
+          uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: 'dist'
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
