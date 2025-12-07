@@ -65,20 +65,29 @@ const careerTimeline = [
     ]
   },
   {
-    period: "2021〜",
+    period: "2021〜2025",
     items: [
-      "Back-End infrastructure & app (AWS)"
+      "Back-End infrastructure & app (AWS)",
+      "Full-Stack development (Spring Boot, Svelte)",
+      "GitHub Enterprise management"
     ]
   }
 ];
+
+// Theme Toggle Icon Classes
+const themeIconClasses = {
+  base: "theme-toggle-icon text-xl text-(--ink-secondary) hover:text-(--accent-sunflower-strong-end) transition-colors",
+  light: "i-ri-moon-line",
+  dark: "i-ri-sun-line"
+};
 ---
 
 <Layout>
   <div class="container mx-auto my-10 max-w-7xl flex flex-col">
     <!-- Theme Toggle Button -->
     <div class="flex justify-end mb-4">
-      <button id="theme-toggle" class="theme-toggle px-4 py-2 rounded-full text-sm font-medium transition-all">
-        <span class="theme-toggle-icon">🌙</span>
+      <button id="theme-toggle" class="px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer border-none bg-transparent">
+        <span class={`${themeIconClasses.base} ${themeIconClasses.light}`}></span>
       </button>
     </div>
     
@@ -142,13 +151,11 @@ const careerTimeline = [
         </h2>
         {
           careerTimeline.map(({period, items}) => (
-            <div class="mb-6">
+            <div class="mb-4 p-4 rounded-lg bg-(--surface-subtle) border border-solid border-(--border-hairline)">
               <h3 class="text-lg font-semibold text-(--ink-muted) mb-2">{period}</h3>
-              <ul class="career-list list-disc list-inside space-y-1 pl-2">
-                {items.map((item) => (
-                  <li>{item}</li>
-                ))}
-              </ul>
+              <p class="text-(--ink-primary) text-sm leading-relaxed whitespace-pre-line">
+                {items.join("\n")}
+              </p>
             </div>
           ))
         }
@@ -165,18 +172,6 @@ const careerTimeline = [
 
 <style>
    @reference "tailwindcss";
-  /* Theme Toggle Button */
-  .theme-toggle {
-    background: var(--gradient-sunflower-soft);
-    color: var(--accent-sunflower-soft-text);
-    cursor: pointer;
-    border: none;
-  }
-
-  .theme-toggle:hover {
-    background: var(--gradient-sunflower-strong-hov);
-  }
-
   /* Section Title */
   .section-title {
     background: var(--gradient-sunflower-soft);
@@ -184,14 +179,9 @@ const careerTimeline = [
     @apply py-2.5 px-5 rounded-md text-center text-xl mb-5;
   }
 
-  /* Career List */
-  .career-list {
-    color: var(--ink-primary);
-  }
-
 </style>
 
-<script>
+<script define:vars={{ themeIconClasses }}>
   // Theme toggle functionality
   const themeToggle = document.getElementById('theme-toggle');
   const html = document.documentElement;
@@ -208,10 +198,11 @@ const careerTimeline = [
     updateToggleIcon(theme);
   });
   
-  function updateToggleIcon(theme: string) {
+  function updateToggleIcon(theme) {
     const icon = document.querySelector('.theme-toggle-icon');
     if (icon) {
-      icon.textContent = theme === 'light' ? '🌙' : '☀️';
+      const iconType = theme === 'light' ? themeIconClasses.light : themeIconClasses.dark;
+      icon.className = `${themeIconClasses.base} ${iconType}`;
     }
   }
 </script>

@@ -12,6 +12,7 @@
     "@egoist/tailwindcss-icons": "^1.9.0",
     "@iconify-json/codicon": "^1.2.31",
     "@iconify-json/logos": "^1.2.9",
+    "@iconify-json/ri": "^1.2.6",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.14.1",
     "tailwindcss": "^4.1.13"
