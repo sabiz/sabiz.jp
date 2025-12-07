@@ -1,0 +1,55 @@
+---
+const repoName = Astro.props.repoName || "";
+const repoUrl = `https://github.com/sabiz/${repoName}`;
+
+const getMetaContent = (html: string, property: string) => {
+    const regex = new RegExp(
+      `<meta\\s+(?:property|name)="${property}"\\s+content="([^"]*)"`,
+      "i",
+    );
+    const match = html.match(regex);
+    return match ? match[1] : "";
+  };
+
+let ogpData = null;  
+try {
+  const response = await fetch(repoUrl);
+  if (!response.ok) {
+    console.error(`${repoName}: Response not ok: ${response.status} ${response.statusText}`);
+  } else {
+    const html = await response.text();
+    const title = getMetaContent(html, "og:title")?.replace(/GitHub - sabiz\//, "");
+    ogpData = {
+      title,
+      image: getMetaContent(html, "og:image"),
+      image_alt: getMetaContent(html, "og:image:alt"),
+    };
+  }
+} catch (error) {
+  console.error("Failed to fetch OGP data:", error);
+}
+---
+
+
+  {
+    ogpData ? (
+      <div class="rounded-lg bg-(--surface-subtle) border border-solid border-(--border-hairline) p-4">
+        <p class="pb-4 text-(--ink-primary) truncate">
+          {ogpData.title}
+        </p>
+        <a
+          href={repoUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex items-center no-underline"
+        >
+          <img
+            src={ogpData.image}
+            alt={ogpData.image_alt}
+            class="rounded-lg w-full"
+          />
+        </a>
+      </div>
+    ) : (<></>)
+  }
+  

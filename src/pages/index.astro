@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ProfileIcon from '../components/ProfileIcon.astro';
+import Repository from '../components/Repository.astro';
+import SkillIcon from '../components/SkillIcon.astro';
+
+// Social Links
+const socialLinks = [
+  { link: "https://x.com/t0mu_twit", icon: "i-logos-x" },
+  { link: "https://github.com/sabiz", icon: "i-logos-github-icon" },
+  { link: "mailto:bellett@sabiz.jp", icon: "i-codicon-mail" }
+];
+
+// Repositories
+const repositories = [
+  "KASURI",
+  "cpqa-Dashboard-Evo",
+  "Awesome",
+  "skyline-color.nvim",
+  "dotfiles"
+];
+
+// Skills
+const skills = [
+  // Languages
+  "py", "cpp", "c", "cs", "java",
+  "kotlin", "swift", "rust", "js", "ts",
+  // Frontend
+  "html", "css", "tailwind", "svelte", "astro",
+  // Backend & Frameworks
+  "nodejs", "express", "spring", "electron", "tauri",
+  // Databases
+  "mysql", "postgres", "sqlite", "redis",
+  // DevOps & Cloud
+  "docker", "aws", "nginx", "raspberrypi",
+  // Tools & IDEs
+  "git", "github", "vscode", "neovim", "vim",
+  "visualstudio", "androidstudio", "gradle", "cmake", "vite",
+  // Others
+  "bash", "powershell", "opencv", "sklearn"
+];
+
+// Career Timeline
+const careerTimeline = [
+  {
+    period: "2013〜2018",
+    items: [
+      "Android system app",
+      "iOS app",
+      "Hybrid app (Cordova)"
+    ]
+  },
+  {
+    period: "2018〜2020",
+    items: [
+      "Image Recognition (Deep learning & Image processing)",
+      "Data science (Machine learning)"
+    ]
+  },
+  {
+    period: "2020〜2021",
+    items: [
+      "Data science (Machine learning)",
+      "Mobile native library(C/C++)"
+    ]
+  },
+  {
+    period: "2021〜2025",
+    items: [
+      "Back-End infrastructure & app (AWS)",
+      "Full-Stack development (Spring Boot, Svelte)",
+      "GitHub Enterprise management"
+    ]
+  }
+];
+
+// Theme Toggle Icon Classes
+const themeIconClasses = {
+  base: "theme-toggle-icon text-xl text-(--ink-secondary) hover:text-(--accent-sunflower-strong-end) transition-colors",
+  light: "i-ri-moon-line",
+  dark: "i-ri-sun-line"
+};
+---
+
+<Layout>
+  <div class="container mx-auto my-10 max-w-7xl flex flex-col">
+    <!-- Theme Toggle Button -->
+    <div class="flex justify-end mb-4">
+      <button id="theme-toggle" class="px-4 py-2 rounded-full text-sm font-medium transition-all cursor-pointer border-none bg-transparent">
+        <span class={`${themeIconClasses.base} ${themeIconClasses.light}`}></span>
+      </button>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="p-10 grid grid-cols-1 lg:grid-cols-2 gap-10">
+
+      <!-- Left Column -->
+      <div class="flex flex-col items-center text-center pb-8 lg:pb-0">
+      <ProfileIcon />
+      <div class="text-md px-6 py rounded-md text-lg mt-2 bg-(image:--gradient-sunflower-soft) text-(--accent-sunflower-soft-text)">
+        sAbIz
+      </div>
+      <p class="text-sm mt-2 text-(--ink-secondary)">
+        Software Engineer@Tokyo, Japan
+      </p>
+      
+      <!-- Social Icons -->
+      <div class="flex gap-4 mt-8">
+        {
+          socialLinks.map(({link, icon}) => (
+            <a href={link} target="_blank" class="flex items-center justify-center w-12 h-12 rounded-full text-gray-950 bg-(image:--gradient-sunflower-soft) hover:bg-(image:--gradient-sunflower-strong-hov) transition-all"><span class={icon + " text-2xl"}></span></a>
+          ))
+        }
+      </div>
+      
+      <!-- Repos Section -->
+      <div class="w-full mt-12">
+        <h2 class="section-title">
+          Repos
+        </h2>
+        <div class="space-y-8">
+          {
+            repositories.map((repo) => (
+              <Repository repoName={repo} />
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="pt-0">
+      <!-- Skills Section -->
+      <div class="mb-10">
+        <h2 class="section-title">
+          Skills
+        </h2>
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-4 mb-10">
+          {
+            skills.map((skill) => (
+              <SkillIcon skill={skill} />
+            ))
+          }
+        </div>
+      </div>
+
+      <!-- Career Section -->
+      <div>
+        <h2 class="section-title">
+          Career
+        </h2>
+        {
+          careerTimeline.map(({period, items}) => (
+            <div class="mb-4 p-4 rounded-lg bg-(--surface-subtle) border border-solid border-(--border-hairline)">
+              <h3 class="text-lg font-semibold text-(--ink-muted) mb-2">{period}</h3>
+              <p class="text-(--ink-primary) text-sm leading-relaxed whitespace-pre-line">
+                {items.join("\n")}
+              </p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+    </div>
+    
+    <!-- Copyright at Bottom Center -->
+    <p class="text-xs text-center py-6 text-(--ink-muted)">
+      (c)2013 sAbIz
+    </p>
+  </div>
+</Layout>
+
+<style>
+   @reference "tailwindcss";
+  /* Section Title */
+  .section-title {
+    background: var(--gradient-sunflower-soft);
+    color: var(--accent-sunflower-soft-text);
+    @apply py-2.5 px-5 rounded-md text-center text-xl mb-5;
+  }
+
+</style>
+
+<script define:vars={{ themeIconClasses }}>
+  // Theme toggle functionality
+  const themeToggle = document.getElementById('theme-toggle');
+  const html = document.documentElement;
+  
+  // Check for saved theme preference or default to 'light'
+  const currentTheme = localStorage.getItem('theme') || 'light';
+  html.setAttribute('data-theme', currentTheme);
+  updateToggleIcon(currentTheme);
+  
+  themeToggle?.addEventListener('click', () => {
+    const theme = html.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    html.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    updateToggleIcon(theme);
+  });
+  
+  function updateToggleIcon(theme) {
+    const icon = document.querySelector('.theme-toggle-icon');
+    if (icon) {
+      const iconType = theme === 'light' ? themeIconClasses.light : themeIconClasses.dark;
+      icon.className = `${themeIconClasses.base} ${iconType}`;
+    }
+  }
+</script>

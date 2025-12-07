@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@plugin "@egoist/tailwindcss-icons";
+
+:root {
+  /* Gradients */
+  --gradient-angle: 135deg;
+  --gradient-angle-hover: calc(var(--gradient-angle) + 2deg);
+  --gradient-angle-active: calc(var(--gradient-angle) - 4deg);
+  --gradient-emphasis-delta: 0.05;
+
+  /* Paper background */
+  --bg-paper-gradient-start: #FFFDF8;
+  --bg-paper-gradient-end:   #F8F4EB;
+
+  /* Surfaces */
+  --surface-card:   #FFFFFF;
+  --surface-subtle: #FAF7F0;
+
+  /* Ink (text) */
+  --ink-primary:   #312E2A;
+  --ink-secondary: #5C5852;
+  --ink-muted:     #8A857D;
+
+  /* Border & Focus */
+  --border-hairline: #E9E4DC;
+  --focus-ring:      #E4C97A;
+
+  /* Accent: Sunflower (primary) */
+  --accent-sunflower-soft-start: #F7EAC5;
+  --accent-sunflower-soft-end:   #F2DFA8;
+  --accent-sunflower-soft-text:  #312E2A;
+
+  --accent-sunflower-strong-start: #E7B24C;
+  --accent-sunflower-strong-end:   #F0C464;
+  --accent-sunflower-strong-text:  #2E261A;
+
+  --accent-sunflower-hover-start: #E9BC5A;
+  --accent-sunflower-hover-end:   #F4CD72;
+  --accent-sunflower-hover-text:  #2E261A;
+
+  --accent-sunflower-active-start: #DFA847;
+  --accent-sunflower-active-end:   #EFBE5D;
+  --accent-sunflower-active-text:  #2E261A;
+
+  --accent-sunflower-disabled-fill: #EFE7D2;
+  --accent-sunflower-disabled-text: #B0A593;
+
+  /* Accent: Leaf Olive (subtle) */
+  --accent-leaf-soft-start: #C9D6A5;
+  --accent-leaf-soft-end:   #DDE6BF;
+  --accent-leaf-soft-text:  #312E2A;
+
+  --accent-leaf-hover-start: #D3DEB4;
+  --accent-leaf-hover-end:   #E4EDC7;
+  --accent-leaf-hover-text:  #312E2A;
+
+  --accent-leaf-active-start: #C2D09A;
+  --accent-leaf-active-end:   #D6E1B5;
+  --accent-leaf-active-text:  #312E2A;
+
+  /* Prebuilt gradient  */
+  --gradient-paper:           linear-gradient(var(--gradient-angle), var(--bg-paper-gradient-start), var(--bg-paper-gradient-end));
+  --gradient-paper-hover:     linear-gradient(var(--gradient-angle-hover), var(--bg-paper-gradient-start), var(--bg-paper-gradient-end));
+  --gradient-paper-active:    linear-gradient(var(--gradient-angle-active), var(--bg-paper-gradient-start), var(--bg-paper-gradient-end));
+
+  --gradient-sunflower-soft:        linear-gradient(var(--gradient-angle), var(--accent-sunflower-soft-start), var(--accent-sunflower-soft-end));
+  --gradient-sunflower-strong:      linear-gradient(var(--gradient-angle), var(--accent-sunflower-strong-start), var(--accent-sunflower-strong-end));
+  --gradient-sunflower-strong-hov:  linear-gradient(var(--gradient-angle-hover), var(--accent-sunflower-hover-start), var(--accent-sunflower-hover-end));
+  --gradient-sunflower-strong-act:  linear-gradient(var(--gradient-angle-active), var(--accent-sunflower-active-start), var(--accent-sunflower-active-end));
+
+  --gradient-leaf-soft:       linear-gradient(var(--gradient-angle), var(--accent-leaf-soft-start), var(--accent-leaf-soft-end));
+  --gradient-leaf-soft-hov:   linear-gradient(var(--gradient-angle-hover), var(--accent-leaf-hover-start), var(--accent-leaf-hover-end));
+  --gradient-leaf-soft-act:   linear-gradient(var(--gradient-angle-active), var(--accent-leaf-active-start), var(--accent-leaf-active-end));
+}
+
+/* Dark mode  */
+[data-theme="dark"] {
+  --bg-paper-gradient-start: #151311;
+  --bg-paper-gradient-end:   #1A1815;
+
+  --surface-card:   #1E1B18;
+  --surface-subtle: #23201C;
+
+  --ink-primary:   #EAE4DB;
+  --ink-secondary: #C7BFB3;
+  --ink-muted:     #A79F93;
+
+  --border-hairline: #2C2925;
+  --focus-ring:      #D8CCB6;
+
+  --accent-sunflower-soft-start: #9E7C34;
+  --accent-sunflower-soft-end:   #B48C3C;
+  --accent-sunflower-soft-text:  #2E261A;
+
+  --accent-sunflower-strong-start: #E0AE4B;
+  --accent-sunflower-strong-end:   #F1C361;
+  --accent-sunflower-strong-text:  #2E261A;
+
+  --accent-sunflower-hover-start: #E5B857;
+  --accent-sunflower-hover-end:   #F4CB6E;
+  --accent-sunflower-hover-text:  #2E261A;
+
+  --accent-sunflower-active-start: #D59F3F;
+  --accent-sunflower-active-end:   #EABB5A;
+  --accent-sunflower-active-text:  #2E261A;
+
+  --accent-sunflower-disabled-fill: #3A332A;
+  --accent-sunflower-disabled-text: #9E9588;
+
+  --accent-leaf-soft-start: #7E8E55;
+  --accent-leaf-soft-end:   #92A368;
+  --accent-leaf-soft-text:  #1E1B18;
+
+  --accent-leaf-hover-start: #889960;
+  --accent-leaf-hover-end:   #9CAF73;
+  --accent-leaf-hover-text:  #1E1B18;
+
+  --accent-leaf-active-start: #73834C;
+  --accent-leaf-active-end:   #8D9E62;
+  --accent-leaf-active-text:  #1E1B18;
+
+  /* Rebuild gradient for dark  */
+  --gradient-paper:           linear-gradient(var(--gradient-angle), var(--bg-paper-gradient-start), var(--bg-paper-gradient-end));
+  --gradient-paper-hover:     linear-gradient(var(--gradient-angle-hover), var(--bg-paper-gradient-start), var(--bg-paper-gradient-end));
+  --gradient-paper-active:    linear-gradient(var(--gradient-angle-active), var(--bg-paper-gradient-start), var(--bg-paper-gradient-end));
+
+  --gradient-sunflower-soft:        linear-gradient(var(--gradient-angle), var(--accent-sunflower-soft-start), var(--accent-sunflower-soft-end));
+  --gradient-sunflower-strong:      linear-gradient(var(--gradient-angle), var(--accent-sunflower-strong-start), var(--accent-sunflower-strong-end));
+  --gradient-sunflower-strong-hov:  linear-gradient(var(--gradient-angle-hover), var(--accent-sunflower-hover-start), var(--accent-sunflower-hover-end));
+  --gradient-sunflower-strong-act:  linear-gradient(var(--gradient-angle-active), var(--accent-sunflower-active-start), var(--accent-sunflower-active-end));
+
+  --gradient-leaf-soft:       linear-gradient(var(--gradient-angle), var(--accent-leaf-soft-start), var(--accent-leaf-soft-end));
+  --gradient-leaf-soft-hov:   linear-gradient(var(--gradient-angle-hover), var(--accent-leaf-hover-start), var(--accent-leaf-hover-end));
+  --gradient-leaf-soft-act:   linear-gradient(var(--gradient-angle-active), var(--accent-leaf-active-start), var(--accent-leaf-active-end));
+}

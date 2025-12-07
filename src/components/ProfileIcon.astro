@@ -1,0 +1,48 @@
+---
+import logoLight from '../assets/logo_light.jpg';
+import logoDark from '../assets/logo_dark.jpg';
+---
+
+<div class="contents">
+  <div class="border-3 border-(--accent-sunflower-soft-end) relative w-36 h-36 rounded-full overflow-hidden">
+    <img 
+      src={logoLight.src} 
+      alt="Profile Light" 
+      class="profile-img light-img w-full h-full object-cover" 
+    />
+    <img 
+      src={logoDark.src} 
+      alt="Profile Dark" 
+      class="profile-img dark-img w-full h-full object-cover" 
+    />
+  </div>
+</div>
+
+<style>
+  .profile-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  /* Light theme: show light image */
+  :root .light-img,
+  :root[data-theme="light"] .light-img {
+    opacity: 1;
+  }
+
+  :root .dark-img,
+  :root[data-theme="light"] .dark-img {
+    opacity: 0;
+  }
+
+  /* Dark theme: show dark image */
+  :root[data-theme="dark"] .light-img {
+    opacity: 0;
+  }
+
+  :root[data-theme="dark"] .dark-img {
+    opacity: 1;
+  }
+</style>

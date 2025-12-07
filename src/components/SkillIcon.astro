@@ -1,0 +1,33 @@
+---
+export interface Props {
+  skill: string;
+}
+
+const { skill } = Astro.props;
+const lightIconUrl = `https://skillicons.dev/icons?i=${skill}&theme=light`;
+const darkIconUrl = `https://skillicons.dev/icons?i=${skill}&theme=dark`;
+---
+
+<div class="aspect-square overflow-hidden" title={skill}>
+  <img src={lightIconUrl} alt={skill} class="skill-icon-light w-full h-full object-cover" />
+  <img src={darkIconUrl} alt={skill} class="skill-icon-dark w-full h-full object-cover" />
+</div>
+
+<style is:global>
+
+  [data-theme="light"] .skill-icon-light {
+    display: block;
+  }
+  
+  [data-theme="light"] .skill-icon-dark {
+    display: none;
+  }
+  
+  [data-theme="dark"] .skill-icon-light {
+    display: none;
+  }
+  
+  [data-theme="dark"] .skill-icon-dark {
+    display: block;
+  }
+</style>
